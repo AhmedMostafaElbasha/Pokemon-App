@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b88d72e0-8f77-4226-a660-0ed12e652a03" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pRkgOcjqoEplGRCX1shz2MaYiY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b88d72e0-8f77-4226-a660-0ed12e652a03" name="Default Changelist" comment="" />
+      <created>1615153400994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615153400994</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization.">
+      <created>1615195998722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615195998722</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="522" y="25" key="CommitChangelistDialog2" timestamp="1615195998251">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="522" y="25" key="CommitChangelistDialog2/0.25.1440.814@0.25.1440.814" timestamp="1615195998251" />
+    <state x="564" y="156" key="Vcs.Push.Dialog.v2" timestamp="1615200817283">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="564" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1615200817283" />
+    <state x="747" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615200833644">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="747" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.814@0.25.1440.814" timestamp="1615200833644" />
+  </component>
+</project>
