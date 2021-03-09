@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b88d72e0-8f77-4226-a660-0ed12e652a03" name="Default Changelist" comment="" />
+    <list default="true" id="b88d72e0-8f77-4226-a660-0ed12e652a03" name="Default Changelist" comment="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization.">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,15 +48,22 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization." />
     <option name="LAST_COMMIT_MESSAGE" value="Update Patch:&#10;&#10;1- Organized the project files.&#10;2- Added Colors.&#10;3- Added TextStyles.&#10;4- Added Routes.&#10;5- Configured Localization." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="522" y="25" key="CommitChangelistDialog2" timestamp="1615195998251">
+    <state x="477" y="25" key="CommitChangelistDialog2" timestamp="1615201597737">
       <screen x="0" y="25" width="1440" height="814" />
     </state>
-    <state x="522" y="25" key="CommitChangelistDialog2/0.25.1440.814@0.25.1440.814" timestamp="1615195998251" />
+    <state x="477" y="25" key="CommitChangelistDialog2/0.25.1440.814@0.25.1440.814" timestamp="1615201597737" />
     <state x="564" y="156" key="Vcs.Push.Dialog.v2" timestamp="1615200817283">
       <screen x="0" y="25" width="1440" height="814" />
     </state>

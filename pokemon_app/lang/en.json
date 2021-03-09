@@ -1,1 +1,4 @@
-{}
+{
+    "no_data_error": "There are no pokemons for current time. please try again later",
+    "no_internet_error": "Your device is not connected to internet. please check your connection then try again later."
+}
