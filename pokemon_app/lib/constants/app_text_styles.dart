@@ -32,4 +32,11 @@ class AppTextStyles {
   static TextStyle regularStyle() {
     return TextStyle();
   }
+
+  static TextStyle stateMessage() {
+    return TextStyle(
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+    );
+  }
 }

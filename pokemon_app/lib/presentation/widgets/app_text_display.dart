@@ -26,6 +26,7 @@ class AppTextDisplay extends StatelessWidget {
       style: textStyle ?? AppTextStyles.regularStyle(),
       maxLines: maxLines,
       textAlign: textAlign,
+      softWrap: true,
     );
   }
 }

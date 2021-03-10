@@ -8,47 +8,74 @@ import '../../presentation/presentation.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<PokemonBloc>(
-      create: (context) => PokemonBloc()..add(PokemonDataFetched()),
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: AppColors.cyan,
-          centerTitle: true,
-          title: AppTextDisplay(
-            text: 'Pokemon App',
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.cyan,
+        centerTitle: true,
+        title: AppTextDisplay(
+          text: 'Pokemon App',
         ),
-        body: Container(
-          height: ScreenUtil().screenHeight,
-          width: ScreenUtil().screenWidth,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                BlocBuilder<PokemonBloc, PokemonState>(
-                  builder: (context, state) {
-                    if (state is PokemonLoadInProgress) {
-                      return AppLoadState();
-                    }
-                    if (state is PokemonLoadSuccess) {
-                      return AppErrorState("This is a test");
-                    }
-
-                    if (state is PokemonLoadFailure) {
-                      return AppErrorState(state.error);
-                    }
-
-                    return Center(
-                      child: AppTextDisplay(
-                        text: "An error is occured with Bloc Execution",
-                      ),
-                    );
-                  },
-                ),
-              ],
-            ),
+      ),
+      drawer: Drawer(),
+      body: Container(
+        height: ScreenUtil().screenHeight,
+        width: ScreenUtil().screenWidth,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              _displayPokemonsList(),
+            ],
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(AppIcons.refresh),
+        backgroundColor: AppColors.cyan,
+        onPressed: () {
+          BlocProvider.of<PokemonBloc>(context).add(PokemonDataRefresh());
+        },
+      ),
+    );
+  }
+
+  Widget _displayPokemonsList() {
+    return BlocBuilder<PokemonBloc, PokemonState>(
+      builder: (context, state) {
+        if (state is PokemonLoadInProgress) {
+          return AppLoadState();
+        }
+        if (state is PokemonLoadSuccess) {
+          return Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: ScreenUtil().setHeight(4),
+              horizontal: ScreenUtil().setWidth(4),
+            ),
+            child: Container(
+              height: ScreenUtil().screenHeight,
+              child: GridView.count(
+                crossAxisCount: 2,
+                mainAxisSpacing: 8.0,
+                crossAxisSpacing: 8.0,
+                children: state.pokemon
+                    .map(
+                      (pokemon) => PokemonItem(pokemon),
+                    )
+                    .toList(),
+              ),
+            ),
+          );
+        }
+
+        if (state is PokemonLoadFailure) {
+          return AppErrorState(state.error);
+        }
+
+        return Center(
+          child: AppTextDisplay(
+            text: "An error is occured with Bloc Execution",
+          ),
+        );
+      },
     );
   }
 }

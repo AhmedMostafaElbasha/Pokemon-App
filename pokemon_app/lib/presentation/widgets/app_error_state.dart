@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../constants/constants.dart';
+import '../../presentation/presentation.dart';
 
 class AppErrorState extends StatelessWidget {
   final String errorMessage;
@@ -17,11 +18,10 @@ class AppErrorState extends StatelessWidget {
 
   Widget _buildErrorIcon() {
     return Padding(
-      padding: EdgeInsets.only(
-          top: ScreenUtil().setHeight(ScreenUtil.defaultSize.height * 0.3)),
+      padding: EdgeInsets.only(top: ScreenUtil().screenHeight * 0.3),
       child: Icon(
         AppIcons.error,
-        size: 180,
+        size: 160,
         color: AppColors.red,
       ),
     );
@@ -29,10 +29,15 @@ class AppErrorState extends StatelessWidget {
 
   Widget _buildErrorMessage(String errorMessage) {
     return Padding(
-      padding: EdgeInsets.only(top: ScreenUtil().setHeight(20)),
-      child: Text(
-        errorMessage,
-        style: AppTextStyles.regularStyle(),
+      padding: EdgeInsets.only(
+        top: ScreenUtil().setHeight(20),
+        left: ScreenUtil().setWidth(26),
+        right: ScreenUtil().setWidth(26),
+      ),
+      child: AppTextDisplay(
+        translation: errorMessage,
+        textStyle: AppTextStyles.stateMessage(),
+        maxLines: 2,
       ),
     );
   }
