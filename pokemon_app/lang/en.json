@@ -1,5 +1,10 @@
 {
     "no_data_error": "There are no pokemons for current time. please try again later",
     "no_internet_error": "Your are not connected to internet. please try again later.",
-    "loading_state_message": "Pokemons are being loaded. Please wait..."
+    "loading_state_message": "Pokemons are being loaded. Please wait...",
+    "height": "Height",
+    "weight": "Weight",
+    "types_heading": "Types",
+    "weakness_heading": "Weakness",
+    "next_evolution_heading": "Next Evolution"
 }
